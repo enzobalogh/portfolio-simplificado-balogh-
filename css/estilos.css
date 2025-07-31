@@ -108,13 +108,17 @@ body {
 }
 
 .home .container-foto img {
-    width: 100%;
-    border-radius: 50%;
-    background: linear-gradient(to right, #8a35c8, #18c063, #00eea2);
+   width: 100%;
+    border-radius: 100%;
+    background: linear-gradient(to right, #8a35c8, #2318c0, #00eea2);
+    
 }
-
+#foto{
+    width: 400px;
+    height: 450px;
+}
 .home .foto.sombra-interna {
-    background: linear-gradient(to right, #8a35c8, #18c063, 
+    background: linear-gradient(to right, #8a35c8, #0d1dac, 
     #00eea2);
 background-size: 180% 180%;
 animation: gradient-animation 5s
@@ -198,6 +202,28 @@ ease infinite;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.projetos .btn-voltar-inicio{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.projetos .btn-voltar-inicio:hover{
+    background-color: #9443d8;
+    transition: 0.3s;
 }
 
 .projetos .btn-mostrar-projetos:hover {
@@ -208,6 +234,7 @@ ease infinite;
 .projetos .btn-mostrar-projetos.remover {
     display: none;
 }
+
 
 @keyframes gradient-animation {
     0% {
